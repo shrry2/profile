@@ -7,6 +7,14 @@ type LinkItem = {
 
 const linkItems: LinkItem[] = [
   {
+    href: 'https://shrry2.me',
+    label: 'Blog',
+  },
+  {
+    href: 'https://keybase.io/shrry2',
+    label: 'Keybase',
+  },
+  {
     href: 'https://twitter.com/shrry2',
     label: 'Twitter',
   },
@@ -15,8 +23,8 @@ const linkItems: LinkItem[] = [
     label: 'Facebook',
   },
   {
-    href: 'https://instagram.com/shrry22',
-    label: 'Instagram',
+    href: 'https://www.linkedin.com/in/takaki-takeuchi/',
+    label: 'LinkedIn',
   },
   {
     href: 'https://www.wantedly.com/id/takaki_takeuchi',

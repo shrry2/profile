@@ -1,5 +1,36 @@
 import { FC } from 'react';
 
+const foods = [
+  {
+    name: 'テリヤキバーガー',
+    description: 'マクドナルドのテリヤキバーガーが好きです'
+  },
+  {
+    name: 'コーラ',
+    description: '世界で一番おいしい飲み物。コカコーラ派です'
+  },
+  {
+    name: 'コーヒー',
+    description: '1日3杯くらいは飲みます。品種とかはよくわかりません'
+  },
+  {
+    name: 'メロンソーダ',
+    description: '昭和にタイムスリップできたら純喫茶でメロンソーダ頼みたい'
+  },
+  {
+    name: "めんま",
+    description: "ラーメンに入っていると嬉しい"
+  },
+  {
+    name: "酢豚",
+    description: "あまずっぱくてなめらかでおいしい"
+  },
+  {
+    name: "春巻き",
+    description: "サクサク食感からの味の濃い中身。至高"
+  }
+];
+
 export const Favorites: FC = () => {
   return (
     <section className="flex flex-col gap-4">
@@ -8,26 +39,13 @@ export const Favorites: FC = () => {
 
       <h3>食べ物・飲み物</h3>
       <ul>
-        <li>
-          <strong>テリヤキバーガー</strong>
-          <br />
-          マクドナルドのテリヤキバーガーが好きです
-        </li>
-        <li>
-          <strong>コーラ</strong>
-          <br />
-          世界で一番おいしい飲み物。コカコーラ派です
-        </li>
-        <li>
-          <strong>コーヒー</strong>
-          <br />
-          1日3杯くらいは飲みます。品種とかはよくわかりません
-        </li>
-        <li>
-          <strong>メロンソーダ</strong>
-          <br />
-          昭和にタイムスリップできたら純喫茶でメロンソーダ頼みたい
-        </li>
+        {foods.map((food) => (
+          <li key={food.name}>
+            <strong>{food.name}</strong>
+            <br />
+            {food.description}
+          </li>
+        ))}
       </ul>
 
       <h3>アニメ・マンガ</h3>

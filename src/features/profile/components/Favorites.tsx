@@ -3,32 +3,48 @@ import { FC } from 'react';
 const foods = [
   {
     name: 'テリヤキバーガー',
-    description: 'マクドナルドのテリヤキバーガーが好きです'
+    description: 'マクドナルドのテリヤキバーガーが好きです',
   },
   {
     name: 'コーラ',
-    description: '世界で一番おいしい飲み物。コカコーラ派です'
+    description: '知的飲料',
   },
   {
     name: 'コーヒー',
-    description: '1日3杯くらいは飲みます。品種とかはよくわかりません'
+    description: '1日3杯くらいは飲みます。品種とかはよくわかりません',
   },
   {
     name: 'メロンソーダ',
-    description: '昭和にタイムスリップできたら純喫茶でメロンソーダ頼みたい'
+    description: '昭和にタイムスリップできたら純喫茶でメロンソーダ頼みたい',
   },
   {
-    name: "めんま",
-    description: "ラーメンに入っていると嬉しい"
+    name: 'めんま',
+    description: 'ラーメンに入っていると嬉しい',
   },
   {
-    name: "酢豚",
-    description: "あまずっぱくてなめらかでおいしい"
+    name: '酢豚',
+    description: 'あまずっぱくてなめらかでおいしい',
   },
   {
-    name: "春巻き",
-    description: "サクサク食感からの味の濃い中身。至高"
-  }
+    name: '春巻き',
+    description: 'サクサク食感からの味の濃い中身。至高',
+  },
+  {
+    name: 'ザッハトルテ',
+    description: 'チョコレートケーキの王様',
+  },
+  {
+    name: 'シュークリーム',
+    description: 'カスタードクリームとホイップクリームのダブルが嬉しい',
+  },
+  {
+    name: 'シフォンケーキ',
+    description: 'ふわふわでおいしい',
+  },
+  {
+    name: 'フィナンシェ',
+    description: 'バターの香りがたまらない',
+  },
 ];
 
 export const Favorites: FC = () => {
@@ -182,6 +198,12 @@ export const Favorites: FC = () => {
           とてもつらいお話なのでもう一度読む気にならない（つまり1回しか読んでいない）んだけど、たぶん一生忘れることができない。
           一生に一度は読んでほしい。
         </li>
+
+        <li>
+          <strong>汝、星のごとく</strong>
+          <br />
+          読むとやさしくなれます
+        </li>
       </ul>
 
       <h3>命名（会社名・ブランド等）</h3>
@@ -243,6 +265,15 @@ export const Favorites: FC = () => {
           ドコモのブランドスローガン（2015〜2021）
           <br />
           なんかこう、余韻を残す感じがいい
+        </li>
+      </ul>
+
+      <h3>名言・フレーズ</h3>
+      <ul>
+        <li>
+          <strong>In a world where you can be anything, be kind.</strong>
+          <br />
+          何にでもなれるこの世界で、やさしくあれ
         </li>
       </ul>
     </section>

@@ -275,6 +275,17 @@ export const Favorites: FC = () => {
           <br />
           何にでもなれるこの世界で、やさしくあれ
         </li>
+
+        <li>
+          <strong>
+            Even if I knew that tomorrow the world would go to pieces, I would
+            still plant my apple tree.
+          </strong>
+          <br />
+          たとえ明日世界が崩壊するとしても、それでも、私はリンゴの木を植えるだろう
+          <br />
+          『幼年期の終わり』を読んだあとだと響きます。人生ってなんなんでしょうね
+        </li>
       </ul>
     </section>
   );

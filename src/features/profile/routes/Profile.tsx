@@ -7,6 +7,7 @@ import { Awards } from '~/features/profile/components/Awards';
 import { Favorites } from '~/features/profile/components/Favorites';
 import { CurrentStatus } from '~/features/profile/components/CurrentStatus';
 import { Contact } from '~/features/profile/components/Contact';
+import { LongList } from '~/features/profile/components/LongList';
 
 export const Profile: FC = () => {
   return (
@@ -21,6 +22,8 @@ export const Profile: FC = () => {
 
       <div className="prose prose-sm max-w-none">
         <CurrentStatus />
+
+        <LongList />
 
         <Contact />
 

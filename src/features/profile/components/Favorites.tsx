@@ -292,6 +292,14 @@ export const Favorites: FC = () => {
           <br />
           覚悟がきまっていて、かっこいい
         </li>
+
+        <li>
+          <strong>We wanted flying cars, instead we got 140 characters.</strong>
+          <br />
+          僕たちが望んだのは空飛ぶクルマだったのに、代わりに手にしたのは140文字だった
+          <br />
+          ピーター・ティールの本『ゼロ・トゥ・ワン』の中で引用されていた言葉です。同書を読むとその意味がよくわかって切ない気持ちになります
+        </li>
       </ul>
     </section>
   );

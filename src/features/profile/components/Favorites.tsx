@@ -268,7 +268,7 @@ export const Favorites: FC = () => {
         </li>
       </ul>
 
-      <h3>名言・フレーズ</h3>
+      <h3>ことば・フレーズ</h3>
       <ul>
         <li>
           <strong>In a world where you can be anything, be kind.</strong>
@@ -285,6 +285,12 @@ export const Favorites: FC = () => {
           たとえ明日世界が崩壊するとしても、それでも、私はリンゴの木を植えるだろう
           <br />
           『幼年期の終わり』を読んだあとだと響きます。人生ってなんなんでしょうね
+        </li>
+
+        <li>
+          <strong>たとえ火の中水の底</strong>
+          <br />
+          覚悟がきまっていて、かっこいい
         </li>
       </ul>
     </section>

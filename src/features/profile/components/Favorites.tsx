@@ -268,7 +268,7 @@ export const Favorites: FC = () => {
         </li>
       </ul>
 
-      <h3>ことば・フレーズ</h3>
+      <h3>ことば・理念</h3>
       <ul>
         <li>
           <strong>In a world where you can be anything, be kind.</strong>
@@ -299,6 +299,49 @@ export const Favorites: FC = () => {
           僕たちが望んだのは空飛ぶクルマだったのに、代わりに手にしたのは140文字だった
           <br />
           ピーター・ティールの本『ゼロ・トゥ・ワン』の中で引用されていた言葉です。同書を読むとその意味がよくわかって切ない気持ちになります
+        </li>
+
+        <li>
+          <strong>どうしても親切が第一</strong>
+          <br />
+          2022年の年の瀬に訪れたTOTOミュージアムの展示で見つけました。初代社長から二代目社長へに送られた書簡の中に書かれていた言葉です。
+          <br />
+          胸アツの文章が続きますので、いつかぜひミュージアムで全文を読んでみてください。
+        </li>
+
+        <li>
+          <strong>Focus on the user and all else will follow.</strong>
+          <br />
+          ユーザーに焦点を絞れば、他のものはみな後からついてくる。
+          <br />
+          Google
+          のモットーのひとつ。結局のところ、利益よりもユーザーのことを考えている企業の方が長く生き残る示唆を感じますね。
+          <br />
+          <strong>Don&apos;t be evil</strong> も好きです。
+        </li>
+
+        <li>
+          <a
+            href="https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
+            target="_blank"
+          >
+            <strong>日本国憲法 前文</strong>
+          </a>
+          <br />
+          長いのでここで引用するのはやめますが、特に「平和を愛する諸国民の公正と信義に信頼して」という部分と「われらは、いづれの国家も、自国のことのみに専念して他国を無視してはならないのであつて」の部分が好きです。
+          <br />
+          『あたらしい憲法のはなし』にある「世の中に、正しいことぐらい強いものはありません。」という言葉も好きです。
+        </li>
+
+        <li>
+          <a
+            href="https://www.jla.or.jp/library/gudeline/tabid/232/Default.aspx"
+            target="_blank"
+          >
+            <strong>図書館の自由に関する宣言</strong>
+          </a>
+          <br />
+          大学の図書館は借りた本を返却すると貸出記録が消えるシステムだったのですが、この宣言を根拠としていたようで、徹底してるなあと思いました。
         </li>
       </ul>
     </section>

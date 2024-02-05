@@ -16,6 +16,7 @@ export const Profile: FC = () => {
         <span className="sr-only">名前</span>
         <h1 className="text-3xl font-bold">Takaki Takeuchi</h1>
         <p>竹内 貴紀 (たけうち たかき)</p>
+        <p>フリーランスの Web エンジニアです</p>
       </section>
 
       <LinkList />

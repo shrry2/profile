@@ -6,18 +6,27 @@ export const CurrentStatus: FC = () => {
       <h2>いまやっていること</h2>
       <ul>
         <li>
-          Web サービス開発 (個人事業)
+          小さい会社の経営とサービス開発
           <ul>
-            <li>フリーランスエンジニア向け工数管理サービス (Next.js)</li>
-            <li>フィットネス特化型マッチングプラットフォーム</li>
+            <li>広告配信プラットフォーム (Next.js, AWS)</li>
           </ul>
         </li>
         <li>
-          受託開発 (フリーランス)
+          個人で Web サービス開発
           <ul>
-            <li>NFTマーケットプレイス (Next.js + Firebase, GCP)</li>
-            <li>メディアプラットフォーム (Next.js, Hasura, Firebase, GCP)</li>
+            <li>工数管理ツール (Next.js, Vercel)</li>
+            <li>割り勘アプリ (Next.js, Vercel, Expo)</li>
+          </ul>
+        </li>
+        <li>
+          システムの受託開発・技術サポート (個人事業)
+          <ul>
+            <li>NFTマーケットプレイス (Next.js, Firebase, Vercel, GCP)</li>
+            <li>
+              メディアプラットフォーム (Next.js, Hasura, Firebase, Vercel, GCP)
+            </li>
             <li>ECサイト (Ruby on Rails, Next.js, AWS)</li>
+            <li>社内業務支援ツール (Laravel)</li>
           </ul>
         </li>
         <li>

@@ -74,7 +74,7 @@ export const Favorites: FC = () => {
       <h2>お気に入り</h2>
       <p>※ ここが本編です。おすすめがあったら教えてください</p>
 
-      <ul className="flex flex-col lg:flex-row gap-2 bg-gray-100 rounded-lg p-4">
+      <ul className="list-none flex flex-col lg:flex-row flex-wrap bg-gray-100 rounded-lg p-4">
         <li>
           <a
             href="#food-drink"

@@ -6,6 +6,7 @@ import { CurrentStatus } from "~/features/profile/components/CurrentStatus";
 import { Favorites } from "~/features/profile/components/Favorites";
 import { History } from "~/features/profile/components/History";
 import { LongList } from "~/features/profile/components/LongList";
+import { MemorableEvents } from "~/features/profile/components/MemorableEvents";
 import { Skills } from "~/features/profile/components/Skills";
 import { LinkList } from "../components/LinkList";
 
@@ -35,6 +36,8 @@ export const Profile: FC = () => {
         <Awards />
 
         <Favorites />
+
+        <MemorableEvents />
       </div>
     </div>
   );

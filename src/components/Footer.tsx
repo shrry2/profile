@@ -8,7 +8,7 @@ const copyrightYear =
 export const Footer: FC = () => {
   return (
     <footer className="p-8">
-      <p className="text-neutral">&copy; {copyrightYear} Takaki Takeuchi</p>
+      <p className="text-gray-600">&copy; {copyrightYear} Takaki Takeuchi</p>
     </footer>
   );
 };

@@ -15,9 +15,9 @@ export const History: FC = () => {
           サービス開発をする
         </li>
       </ul>
-      <details className="collapse collapse-arrow border border-base-300 bg-base-200">
-        <summary className="collapse-title">昔話 (クリックして開閉)</summary>
-        <div className="collapse-content">
+      <details className="border border-gray-300 bg-gray-100 rounded-lg overflow-hidden">
+        <summary className="cursor-pointer font-medium bg-gray-50 p-4 hover:bg-gray-200 transition-colors">昔話 (クリックして開閉)</summary>
+        <div className="p-4">
           <p>
             なぜ比較的若い私が「個人ホームページ」の時代を知っているのか、なぜWeb開発を仕事にしたのか。すこし語らせてください。
           </p>

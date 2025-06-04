@@ -23,12 +23,9 @@ export const LongList: FC = () => {
         <li>結局人生とは何だったのかを知りたい</li>
         <li>
           まだ鑑賞できていない名作・人気作を一気に鑑賞したい
-          <div
-            tabIndex={0}
-            className="collapse collapse-arrow border border-base-300 bg-base-200"
-          >
-            <div className="collapse-title">たとえば...</div>
-            <div className="collapse-content">
+          <details className="border border-gray-300 bg-gray-100 rounded-lg overflow-hidden">
+            <summary className="cursor-pointer font-medium bg-gray-50 p-4 hover:bg-gray-200 transition-colors">たとえば...</summary>
+            <div className="p-4">
               <ul>
                 <li>
                   小説
@@ -52,7 +49,7 @@ export const LongList: FC = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </details>
         </li>
       </ul>
     </section>

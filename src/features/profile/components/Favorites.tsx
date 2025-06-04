@@ -74,45 +74,45 @@ export const Favorites: FC = () => {
       <h2>お気に入り</h2>
       <p>※ ここが本編です。おすすめがあったら教えてください</p>
 
-      <ul className="menu menu-vertical lg:menu-horizontal bg-base-200 rounded-box">
+      <ul className="flex flex-col lg:flex-row gap-2 bg-gray-100 rounded-lg p-4">
         <li>
-          <a href="#food-drink">食べ物・飲み物</a>
+          <a href="#food-drink" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded transition-colors">食べ物・飲み物</a>
         </li>
         <li>
-          <a href="#anime-manga">アニメ・マンガ</a>
+          <a href="#anime-manga" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded transition-colors">アニメ・マンガ</a>
         </li>
         <li>
-          <a href="#novel">小説</a>
+          <a href="#novel" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded transition-colors">小説</a>
         </li>
         <li>
-          <a href="#music">楽曲</a>
+          <a href="#music" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded transition-colors">楽曲</a>
         </li>
         <li>
-          <a href="#movie">映画</a>
+          <a href="#movie" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded transition-colors">映画</a>
         </li>
         <li>
-          <a href="#poem">詩・俳句・川柳・短歌・歌詞</a>
+          <a href="#poem" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded transition-colors">詩・俳句・川柳・短歌・歌詞</a>
         </li>
         <li>
-          <a href="#naming">命名（会社名・ブランド等）</a>
+          <a href="#naming" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded transition-colors">命名（会社名・ブランド等）</a>
         </li>
         <li>
-          <a href="#slogan">キャッチコピー・スローガン</a>
+          <a href="#slogan" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded transition-colors">キャッチコピー・スローガン</a>
         </li>
         <li>
-          <a href="#commercial">コマーシャル</a>
+          <a href="#commercial" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded transition-colors">コマーシャル</a>
         </li>
         <li>
-          <a href="#quote">ことば・理念</a>
+          <a href="#quote" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded transition-colors">ことば・理念</a>
         </li>
         <li>
-          <a href="#youtube">YouTube チャンネル</a>
+          <a href="#youtube" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded transition-colors">YouTube チャンネル</a>
         </li>
         <li>
-          <a href="#character">キャラクター</a>
+          <a href="#character" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded transition-colors">キャラクター</a>
         </li>
         <li>
-          <a href="#idea">アイデア</a>
+          <a href="#idea" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded transition-colors">アイデア</a>
         </li>
       </ul>
 

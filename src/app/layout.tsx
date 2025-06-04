@@ -1,12 +1,12 @@
-import type { Metadata } from 'next';
-import { ReactNode } from 'react';
+import type { Metadata } from "next";
+import type { ReactNode } from "react";
 
-import '~/styles/globals.css';
-import { Footer } from '~/components/Footer';
+import "~/styles/globals.css";
+import { Footer } from "~/components/Footer";
 
 export const metadata: Metadata = {
-  title: 'Takaki Takeuchi',
-  description: 'My profile',
+  title: "Takaki Takeuchi",
+  description: "My profile",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

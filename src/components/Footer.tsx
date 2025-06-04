@@ -1,8 +1,8 @@
-import { FC } from 'react';
+import type { FC } from "react";
 
 const copyrightYear =
   new Date().getFullYear() === 2015
-    ? '2015'
+    ? "2015"
     : `2015-${new Date().getFullYear()}`;
 
 export const Footer: FC = () => {

@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from "react";
 
 export const Awards: FC = () => {
   return (
@@ -7,7 +7,7 @@ export const Awards: FC = () => {
       <ul>
         <li>基本情報技術者 (2014年9月)</li>
         <li>
-          経済産業省商務情報政策局長賞・豆蔵ホールディングス賞 (2016年10月{' '}
+          経済産業省商務情報政策局長賞・豆蔵ホールディングス賞 (2016年10月{" "}
           <a
             href="https://u22procon.com/2016/report/"
             target="_blank"

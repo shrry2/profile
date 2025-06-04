@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "biome check .",
+    "format": "biome check . --write"
   },
   "dependencies": {
     "next": "15.3.3",
@@ -14,15 +15,13 @@
     "react-dom": "19.1.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@tailwindcss/postcss": "^4.1.8",
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "22.15.29",
     "@types/react": "19.1.6",
     "@types/react-dom": "19.1.5",
-    "eslint": "8.56.0",
-    "eslint-config-next": "15.3.3",
     "postcss": "8.5.4",
-    "prettier": "^3.2.4",
     "tailwindcss": "4.1.8",
     "typescript": "5.8.3"
   },
@@ -32,8 +31,6 @@
       "@types/react": "19.1.6",
       "@types/react-dom": "19.1.5"
     },
-    "onlyBuiltDependencies": [
-      "sharp"
-    ]
+    "onlyBuiltDependencies": ["sharp"]
   }
 }

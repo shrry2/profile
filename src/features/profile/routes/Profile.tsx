@@ -1,13 +1,13 @@
-import { FC } from 'react';
+import type { FC } from "react";
 
-import { LinkList } from '../components/LinkList';
-import { History } from '~/features/profile/components/History';
-import { Skills } from '~/features/profile/components/Skills';
-import { Awards } from '~/features/profile/components/Awards';
-import { Favorites } from '~/features/profile/components/Favorites';
-import { CurrentStatus } from '~/features/profile/components/CurrentStatus';
-import { Contact } from '~/features/profile/components/Contact';
-import { LongList } from '~/features/profile/components/LongList';
+import { Awards } from "~/features/profile/components/Awards";
+import { Contact } from "~/features/profile/components/Contact";
+import { CurrentStatus } from "~/features/profile/components/CurrentStatus";
+import { Favorites } from "~/features/profile/components/Favorites";
+import { History } from "~/features/profile/components/History";
+import { LongList } from "~/features/profile/components/LongList";
+import { Skills } from "~/features/profile/components/Skills";
+import { LinkList } from "../components/LinkList";
 
 export const Profile: FC = () => {
   return (

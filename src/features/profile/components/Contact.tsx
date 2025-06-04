@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from "react";
 
 export const Contact: FC = () => {
   return (
@@ -10,17 +10,17 @@ export const Contact: FC = () => {
         <code>takaki (at) takeu.ch</code>
       </p>
       <p>
-        PGP公開鍵は{' '}
+        PGP公開鍵は{" "}
         <a
           href="https://keybase.io/shrry2"
           target="_blank"
           rel="noopener noreferrer"
         >
           Keybase
-        </a>{' '}
+        </a>{" "}
         にて取得できます。
         <br />
-        フィンガープリント:{' '}
+        フィンガープリント:{" "}
         <code>AE77 D202 8FD9 4D8D 61A1 5CAD BF35 5E69 1312 3608</code>
       </p>
     </section>

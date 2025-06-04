@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from "react";
 
 export const LongList: FC = () => {
   return (
@@ -24,7 +24,9 @@ export const LongList: FC = () => {
         <li>
           まだ鑑賞できていない名作・人気作を一気に鑑賞したい
           <details className="border border-gray-300 bg-gray-100 rounded-lg overflow-hidden">
-            <summary className="cursor-pointer font-medium bg-gray-50 p-4 hover:bg-gray-200 transition-colors">たとえば...</summary>
+            <summary className="cursor-pointer font-medium bg-gray-50 p-4 hover:bg-gray-200 transition-colors">
+              たとえば...
+            </summary>
             <div className="p-4">
               <ul>
                 <li>

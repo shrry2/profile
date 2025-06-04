@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from "react";
 
 type LinkItem = {
   href: string;
@@ -7,36 +7,36 @@ type LinkItem = {
 
 const linkItems: LinkItem[] = [
   {
-    href: 'https://shrry2.me',
-    label: 'Blog',
+    href: "https://shrry2.me",
+    label: "Blog",
   },
   {
-    href: 'https://keybase.io/shrry2',
-    label: 'Keybase',
+    href: "https://keybase.io/shrry2",
+    label: "Keybase",
   },
   {
-    href: 'https://twitter.com/shrry2',
-    label: 'Twitter',
+    href: "https://twitter.com/shrry2",
+    label: "Twitter",
   },
   {
-    href: 'https://www.facebook.com/takaki.tekeuchi/',
-    label: 'Facebook',
+    href: "https://www.facebook.com/takaki.tekeuchi/",
+    label: "Facebook",
   },
   {
-    href: 'https://www.linkedin.com/in/takaki-takeuchi/',
-    label: 'LinkedIn',
+    href: "https://www.linkedin.com/in/takaki-takeuchi/",
+    label: "LinkedIn",
   },
   {
-    href: 'https://www.wantedly.com/id/takaki_takeuchi',
-    label: 'Wantedly',
+    href: "https://www.wantedly.com/id/takaki_takeuchi",
+    label: "Wantedly",
   },
   {
-    href: 'https://bookmeter.com/users/286400',
-    label: '読書メーター',
+    href: "https://bookmeter.com/users/286400",
+    label: "読書メーター",
   },
   {
-    href: 'https://myanimelist.net/animelist/shrry2',
-    label: 'MyAnimeList',
+    href: "https://myanimelist.net/animelist/shrry2",
+    label: "MyAnimeList",
   },
 ];
 

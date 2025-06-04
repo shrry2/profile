@@ -1,70 +1,70 @@
-import { FC } from 'react';
+import type { FC } from "react";
 
 const foods = [
   {
-    name: 'テリヤキバーガー',
-    description: 'マクドナルドのテリヤキバーガーが好きです',
+    name: "テリヤキバーガー",
+    description: "マクドナルドのテリヤキバーガーが好きです",
   },
   {
-    name: 'コーラ',
-    description: '知的飲料',
+    name: "コーラ",
+    description: "知的飲料",
   },
   {
-    name: 'コーヒー',
-    description: '1日3杯くらいは飲みます。品種とかはよくわかりません',
+    name: "コーヒー",
+    description: "1日3杯くらいは飲みます。品種とかはよくわかりません",
   },
   {
-    name: 'メロンソーダ',
-    description: '昭和にタイムスリップできたら純喫茶でメロンソーダ頼みたい',
+    name: "メロンソーダ",
+    description: "昭和にタイムスリップできたら純喫茶でメロンソーダ頼みたい",
   },
   {
-    name: 'めんま',
-    description: 'ラーメンに入っていると嬉しい',
+    name: "めんま",
+    description: "ラーメンに入っていると嬉しい",
   },
   {
-    name: '酢豚',
-    description: 'あまずっぱくてなめらかでおいしい',
+    name: "酢豚",
+    description: "あまずっぱくてなめらかでおいしい",
   },
   {
-    name: '春巻き',
-    description: 'サクサク食感からの味の濃い中身。至高',
+    name: "春巻き",
+    description: "サクサク食感からの味の濃い中身。至高",
   },
   {
-    name: 'ザッハトルテ',
-    description: 'チョコレートケーキの王様',
+    name: "ザッハトルテ",
+    description: "チョコレートケーキの王様",
   },
   {
-    name: 'シュークリーム',
-    description: 'カスタードクリームとホイップクリームのダブルが嬉しい',
+    name: "シュークリーム",
+    description: "カスタードクリームとホイップクリームのダブルが嬉しい",
   },
   {
-    name: 'シフォンケーキ',
-    description: 'ふわふわでおいしい',
+    name: "シフォンケーキ",
+    description: "ふわふわでおいしい",
   },
   {
-    name: 'フィナンシェ',
-    description: 'バターの香りがたまらない',
+    name: "フィナンシェ",
+    description: "バターの香りがたまらない",
   },
   {
-    name: 'たらこパスタ',
-    description: '大葉が乗っていたら最高ですね',
+    name: "たらこパスタ",
+    description: "大葉が乗っていたら最高ですね",
   },
   {
-    name: 'サイゼリヤのイタリアンジェラート',
-    description: '初めて食べたときあまりのおいしさに感激しました',
+    name: "サイゼリヤのイタリアンジェラート",
+    description: "初めて食べたときあまりのおいしさに感激しました",
   },
   {
-    name: 'みたらしだんご',
-    description: 'あんなにおいしいのに3本150円くらいで買えて、意味が分からない',
+    name: "みたらしだんご",
+    description: "あんなにおいしいのに3本150円くらいで買えて、意味が分からない",
   },
   {
-    name: 'ピーナッツのランチパック',
+    name: "ピーナッツのランチパック",
     description:
-      'そもそもピーナッツクリームが好きなんですよね。毎週2つは食べています',
+      "そもそもピーナッツクリームが好きなんですよね。毎週2つは食べています",
   },
   {
-    name: 'まぐろ',
-    description: '寿司ネタで圧倒的に一番好きです',
+    name: "まぐろ",
+    description: "寿司ネタで圧倒的に一番好きです",
   },
 ];
 
@@ -76,43 +76,108 @@ export const Favorites: FC = () => {
 
       <ul className="flex flex-col lg:flex-row gap-2 bg-gray-100 rounded-lg p-4">
         <li>
-          <a href="#food-drink" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors">食べ物・飲み物</a>
+          <a
+            href="#food-drink"
+            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+          >
+            食べ物・飲み物
+          </a>
         </li>
         <li>
-          <a href="#anime-manga" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors">アニメ・マンガ</a>
+          <a
+            href="#anime-manga"
+            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+          >
+            アニメ・マンガ
+          </a>
         </li>
         <li>
-          <a href="#novel" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors">小説</a>
+          <a
+            href="#novel"
+            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+          >
+            小説
+          </a>
         </li>
         <li>
-          <a href="#music" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors">楽曲</a>
+          <a
+            href="#music"
+            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+          >
+            楽曲
+          </a>
         </li>
         <li>
-          <a href="#movie" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors">映画</a>
+          <a
+            href="#movie"
+            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+          >
+            映画
+          </a>
         </li>
         <li>
-          <a href="#poem" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors">詩・俳句・川柳・短歌・歌詞</a>
+          <a
+            href="#poem"
+            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+          >
+            詩・俳句・川柳・短歌・歌詞
+          </a>
         </li>
         <li>
-          <a href="#naming" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors">命名（会社名・ブランド等）</a>
+          <a
+            href="#naming"
+            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+          >
+            命名（会社名・ブランド等）
+          </a>
         </li>
         <li>
-          <a href="#slogan" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors">キャッチコピー・スローガン</a>
+          <a
+            href="#slogan"
+            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+          >
+            キャッチコピー・スローガン
+          </a>
         </li>
         <li>
-          <a href="#commercial" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors">コマーシャル</a>
+          <a
+            href="#commercial"
+            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+          >
+            コマーシャル
+          </a>
         </li>
         <li>
-          <a href="#quote" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors">ことば・理念</a>
+          <a
+            href="#quote"
+            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+          >
+            ことば・理念
+          </a>
         </li>
         <li>
-          <a href="#youtube" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors">YouTube チャンネル</a>
+          <a
+            href="#youtube"
+            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+          >
+            YouTube チャンネル
+          </a>
         </li>
         <li>
-          <a href="#character" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors">キャラクター</a>
+          <a
+            href="#character"
+            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+          >
+            キャラクター
+          </a>
         </li>
         <li>
-          <a href="#idea" className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors">アイデア</a>
+          <a
+            href="#idea"
+            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+          >
+            アイデア
+          </a>
         </li>
       </ul>
 
@@ -488,7 +553,11 @@ export const Favorites: FC = () => {
       <h3 id="commercial">コマーシャル</h3>
       <ul>
         <li>
-          <a href="https://www.youtube.com/watch?v=dMBW1G4U54g" target="_blank">
+          <a
+            href="https://www.youtube.com/watch?v=dMBW1G4U54g"
+            target="_blank"
+            rel="noreferrer"
+          >
             <strong>Apple: MacBook Air 1</strong>
           </a>
           <br />
@@ -496,7 +565,11 @@ export const Favorites: FC = () => {
         </li>
 
         <li>
-          <a href="https://www.youtube.com/watch?v=8c30t3SNOz0" target="_blank">
+          <a
+            href="https://www.youtube.com/watch?v=8c30t3SNOz0"
+            target="_blank"
+            rel="noreferrer"
+          >
             <strong>Apple: MacBook Air 2</strong>
           </a>
           <br />
@@ -504,7 +577,11 @@ export const Favorites: FC = () => {
         </li>
 
         <li>
-          <a href="https://www.youtube.com/watch?v=rcw5ILVeJec" target="_blank">
+          <a
+            href="https://www.youtube.com/watch?v=rcw5ILVeJec"
+            target="_blank"
+            rel="noreferrer"
+          >
             <strong>東京モード学園: 「承認欲求」篇</strong>
           </a>
           <br />
@@ -512,7 +589,11 @@ export const Favorites: FC = () => {
         </li>
 
         <li>
-          <a href="https://www.youtube.com/watch?v=AOdJFSL54fg" target="_blank">
+          <a
+            href="https://www.youtube.com/watch?v=AOdJFSL54fg"
+            target="_blank"
+            rel="noreferrer"
+          >
             <strong>Netflix: アニメで言葉があふれだす。</strong>
           </a>
           <br />
@@ -522,7 +603,11 @@ export const Favorites: FC = () => {
         </li>
 
         <li>
-          <a href="https://www.youtube.com/watch?v=MGt25mv4-2Q" target="_blank">
+          <a
+            href="https://www.youtube.com/watch?v=MGt25mv4-2Q"
+            target="_blank"
+            rel="noreferrer"
+          >
             <strong>Google Chrome: Hatsune Miku (初音ミク)</strong>
           </a>
           <br />
@@ -532,7 +617,11 @@ export const Favorites: FC = () => {
         </li>
 
         <li>
-          <a href="https://www.youtube.com/watch?v=W3PxZR3Nbs8" target="_blank">
+          <a
+            href="https://www.youtube.com/watch?v=W3PxZR3Nbs8"
+            target="_blank"
+            rel="noreferrer"
+          >
             <strong>FRISK: アイデアが生まれる場所</strong>
           </a>
           <br />
@@ -598,6 +687,7 @@ export const Favorites: FC = () => {
           <a
             href="https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
             target="_blank"
+            rel="noreferrer"
           >
             <strong>日本国憲法 前文</strong>
           </a>
@@ -611,6 +701,7 @@ export const Favorites: FC = () => {
           <a
             href="https://www.jla.or.jp/library/gudeline/tabid/232/Default.aspx"
             target="_blank"
+            rel="noreferrer"
           >
             <strong>図書館の自由に関する宣言</strong>
           </a>
@@ -638,19 +729,31 @@ export const Favorites: FC = () => {
       <h3 id="youtube">YouTube チャンネル</h3>
       <ul>
         <li>
-          <a href="https://www.youtube.com/@Kojiseto" target="_blank">
+          <a
+            href="https://www.youtube.com/@Kojiseto"
+            target="_blank"
+            rel="noreferrer"
+          >
             <strong>瀬戸弘司 / Koji Seto</strong>
           </a>
           <br />
           10年以上前から大ファンです。何年経っても圧倒的ナンバーワン。
-          <a href="https://www.youtube.com/watch?v=yT1QZW-wMmY" target="_blank">
+          <a
+            href="https://www.youtube.com/watch?v=yT1QZW-wMmY"
+            target="_blank"
+            rel="noreferrer"
+          >
             凄曲十分作
           </a>
           がマジで好きです。
         </li>
 
         <li>
-          <a href="https://www.youtube.com/@Ciaela" target="_blank">
+          <a
+            href="https://www.youtube.com/@Ciaela"
+            target="_blank"
+            rel="noreferrer"
+          >
             <strong>Micaela ミカエラ</strong>
           </a>
           <br />
@@ -659,7 +762,11 @@ export const Favorites: FC = () => {
         </li>
 
         <li>
-          <a href="https://www.youtube.com/@omocorochannel" target="_blank">
+          <a
+            href="https://www.youtube.com/@omocorochannel"
+            target="_blank"
+            rel="noreferrer"
+          >
             <strong>オモコロチャンネル</strong>
           </a>
           <br />
@@ -690,6 +797,7 @@ export const Favorites: FC = () => {
           <a
             href="https://www.youtube.com/watch?v=AHvcdd8vSpo&t=583s"
             target="_blank"
+            rel="noreferrer"
           >
             オモコロチャンネル「【お悩み相談】視聴者の悩みを解決したい5人が集まった！！集まったぞ！！解決するのか！？どうだ！？」
           </a>
@@ -704,6 +812,7 @@ export const Favorites: FC = () => {
           <a
             href="https://www.youtube.com/watch?v=8QBLeEi-kv4&t=663s"
             target="_blank"
+            rel="noreferrer"
           >
             オモコロチャンネル「百戦錬磨のバーテンダーがあなたのお悩みに答えます【マジ人生相談】」
           </a>

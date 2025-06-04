@@ -1,9 +1,9 @@
-import { MetadataRoute } from 'next';
+import type { MetadataRoute } from "next";
 
 const sitemap = (): MetadataRoute.Sitemap => {
   return [
     {
-      url: 'https://takaki.takeu.ch',
+      url: "https://takaki.takeu.ch",
       lastModified: new Date(),
     },
   ];

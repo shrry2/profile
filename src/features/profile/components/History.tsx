@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import type { FC } from "react";
 
 export const History: FC = () => {
   return (
@@ -16,7 +16,9 @@ export const History: FC = () => {
         </li>
       </ul>
       <details className="border border-gray-300 bg-gray-100 rounded-lg overflow-hidden">
-        <summary className="cursor-pointer font-medium bg-gray-50 p-4 hover:bg-gray-200 transition-colors">昔話 (クリックして開閉)</summary>
+        <summary className="cursor-pointer font-medium bg-gray-50 p-4 hover:bg-gray-200 transition-colors">
+          昔話 (クリックして開閉)
+        </summary>
         <div className="p-4">
           <p>
             なぜ比較的若い私が「個人ホームページ」の時代を知っているのか、なぜWeb開発を仕事にしたのか。すこし語らせてください。
@@ -81,7 +83,7 @@ export const History: FC = () => {
 
           <h3>2015~ Webサービス開発にハマる</h3>
           <p>
-            高校に上がり1年生の夏休みに <strong>Life is Tech!</strong>{' '}
+            高校に上がり1年生の夏休みに <strong>Life is Tech!</strong>{" "}
             という大学で行われるITキャンプに参加して、Web 開発に目覚めます。
           </p>
           <p>

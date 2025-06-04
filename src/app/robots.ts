@@ -1,12 +1,12 @@
-import { MetadataRoute } from 'next';
+import type { MetadataRoute } from "next";
 
 const robots = (): MetadataRoute.Robots => {
   return {
     rules: {
-      userAgent: '*',
-      allow: '/',
+      userAgent: "*",
+      allow: "/",
     },
-    sitemap: 'https://takaki.takeu.ch/sitemap.xml',
+    sitemap: "https://takaki.takeu.ch/sitemap.xml",
   };
 };
 

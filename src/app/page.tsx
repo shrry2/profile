@@ -1,6 +1,6 @@
-import { NextPage } from 'next';
+import type { NextPage } from "next";
 
-import { Profile } from '~/features/profile';
+import { Profile } from "~/features/profile";
 
 const HomePage: NextPage = () => {
   return <Profile />;

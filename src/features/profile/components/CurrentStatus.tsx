@@ -5,35 +5,26 @@ export const CurrentStatus: FC = () => {
     <section className="flex flex-col gap-4">
       <h2>いまやっていること</h2>
       <ul>
+        <li>スタートアップ企業のリードエンジニア</li>
         <li>
-          小さい会社の経営とサービス開発
+          個人開発
           <ul>
-            <li>広告配信プラットフォーム (Next.js, AWS)</li>
-          </ul>
-        </li>
-        <li>
-          個人で Web サービス開発
-          <ul>
-            <li>工数管理ツール (Next.js, Vercel)</li>
-            <li>割り勘アプリ (Next.js, Vercel, Expo)</li>
+            <li>広告配信プラットフォーム</li>
+            <li>星占い</li>
           </ul>
         </li>
         <li>
           システムの受託開発・技術サポート (個人事業)
           <ul>
-            <li>NFTマーケットプレイス (Next.js, Firebase, Vercel, GCP)</li>
-            <li>
-              メディアプラットフォーム (Next.js, Hasura, Firebase, Vercel, GCP)
-            </li>
-            <li>ECサイト (Ruby on Rails, Next.js, AWS)</li>
-            <li>社内業務支援ツール (Laravel)</li>
+            <li>CtoC マーケットプレイス</li>
+            <li>医療系マッチングサービス</li>
           </ul>
         </li>
         <li>
           資格の勉強
           <ul>
-            <li>日商簿記3級</li>
-            <li>情報処理安全確保支援士</li>
+            <li>宅地建物取引士</li>
+            <li>日商簿記2級</li>
           </ul>
         </li>
       </ul>

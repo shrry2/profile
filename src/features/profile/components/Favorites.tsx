@@ -625,9 +625,7 @@ export const Favorites: FC = () => {
             <strong>FRISK: アイデアが生まれる場所</strong>
           </a>
           <br />
-          ブレーンストーミングをするときに紹介します (笑)
-          <br />
-          ただ、個人的には他人との会話の中でアイデアが生まれることが多いと思います
+          個人的には他人との会話の中でアイデアが生まれることが多いと思います
         </li>
       </ul>
 
@@ -685,20 +683,6 @@ export const Favorites: FC = () => {
 
         <li>
           <a
-            href="https://www.shugiin.go.jp/internet/itdb_annai.nsf/html/statics/shiryo/dl-constitution.htm"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <strong>日本国憲法 前文</strong>
-          </a>
-          <br />
-          長いのでここで引用するのはやめますが、特に「平和を愛する諸国民の公正と信義に信頼して」という部分と「われらは、いづれの国家も、自国のことのみに専念して他国を無視してはならないのであつて」の部分が好きです。
-          <br />
-          『あたらしい憲法のはなし』にある「世の中に、正しいことぐらい強いものはありません。」という言葉も好きです。
-        </li>
-
-        <li>
-          <a
             href="https://www.jla.or.jp/library/gudeline/tabid/232/Default.aspx"
             target="_blank"
             rel="noreferrer"
@@ -706,7 +690,7 @@ export const Favorites: FC = () => {
             <strong>図書館の自由に関する宣言</strong>
           </a>
           <br />
-          大学の図書館は借りた本を返却すると貸出記録が消えるシステムだったのですが、この宣言を根拠としていたようで、徹底してるなあと思いました。
+          大学の図書館は借りた本を返却すると貸出記録が消えるシステムだったのですが、この宣言を根拠としていたようで、なんかかっこいいなと思いました。
         </li>
 
         <li>

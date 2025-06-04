@@ -17,8 +17,9 @@ export const Awards: FC = () => {
           </a>
           にて）
         </li>
-        <li>TOEIC 公開テスト 910点 (2018年11月)</li>
         <li>応用情報技術者 (2023年4月)</li>
+        <li>TOEIC 公開テスト 970点 (2024年9月)</li>
+        <li>日商簿記3級 (2025年1月)</li>
       </ul>
     </section>
   );

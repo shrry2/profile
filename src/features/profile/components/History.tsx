@@ -10,10 +10,8 @@ export const History: FC = () => {
         <li>2021年1月: 個人事業主として開業（屋号: ひつじインクリメント）</li>
         <li>2022年3月: 長崎大学多文化社会学部卒業</li>
         <li>2022年4月: Web 系事業会社に入社</li>
-        <li>
-          2023年7月: フリーランスエンジニアに戻り、気ままに Web
-          サービス開発をする
-        </li>
+        <li>2023年7月: フリーランスエンジニアに戻る</li>
+        <li>2025年3月: 友人が起業したスタートアップに参画</li>
       </ul>
       <details className="border border-gray-300 bg-gray-100 rounded-lg overflow-hidden">
         <summary className="cursor-pointer font-medium bg-gray-50 p-4 hover:bg-gray-200 transition-colors">

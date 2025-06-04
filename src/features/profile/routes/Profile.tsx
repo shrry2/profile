@@ -12,32 +12,54 @@ import { LinkList } from "../components/LinkList";
 
 export const Profile: FC = () => {
   return (
-    <div className="p-8 pb-0 flex flex-col gap-6">
-      <section className="flex flex-col gap-4">
+    <div className="flex flex-col gap-0">
+      <header className="bg-gradient-to-br from-blue-800 to-blue-600 text-white rounded-2xl p-12 mb-8 text-center shadow-xl">
         <span className="sr-only">名前</span>
-        <h1 className="text-3xl font-bold">Takaki Takeuchi</h1>
-        <p>竹内 貴紀 (たけうち たかき)</p>
-        <p>フリーランスの Web エンジニアです</p>
-      </section>
+        <h1 className="text-5xl font-extrabold mb-2 tracking-tight">
+          Takaki Takeuchi
+        </h1>
+        <p className="text-white/90 text-lg mb-2">
+          竹内 貴紀 (たけうち たかき)
+        </p>
+        <p className="text-white/90 text-lg">フリーランスの Web エンジニア</p>
+      </header>
 
-      <LinkList />
+      <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 mb-6 hover:shadow-md transition-all duration-200">
+        <LinkList />
+      </div>
 
-      <div className="prose prose-sm max-w-none">
-        <CurrentStatus />
+      <div className="prose prose-gray max-w-none prose-p:text-gray-800 prose-li:text-gray-800">
+        <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 mb-6 hover:shadow-md transition-all duration-200">
+          <CurrentStatus />
+        </div>
 
-        <LongList />
+        <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 mb-6 hover:shadow-md transition-all duration-200">
+          <LongList />
+        </div>
 
-        <Contact />
+        <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 mb-6 hover:shadow-md transition-all duration-200">
+          <Contact />
+        </div>
 
-        <History />
+        <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 mb-6 hover:shadow-md transition-all duration-200">
+          <History />
+        </div>
 
-        <Skills />
+        <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 mb-6 hover:shadow-md transition-all duration-200">
+          <Skills />
+        </div>
 
-        <Awards />
+        <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 mb-6 hover:shadow-md transition-all duration-200">
+          <Awards />
+        </div>
 
-        <Favorites />
+        <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 mb-6 hover:shadow-md transition-all duration-200">
+          <Favorites />
+        </div>
 
-        <MemorableEvents />
+        <div className="bg-white rounded-xl p-8 shadow-sm border border-gray-200 mb-6 hover:shadow-md transition-all duration-200">
+          <MemorableEvents />
+        </div>
       </div>
     </div>
   );

@@ -10,19 +10,19 @@
     "format": "biome check . --write"
   },
   "dependencies": {
-    "next": "15.3.3",
+    "next": "15.3.5",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "@tailwindcss/postcss": "^4.1.8",
+    "@biomejs/biome": "^2.0.6",
+    "@tailwindcss/postcss": "^4.1.11",
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "22.15.29",
-    "@types/react": "19.1.6",
-    "@types/react-dom": "19.1.5",
-    "postcss": "8.5.4",
-    "tailwindcss": "4.1.8",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "19.1.6",
+    "postcss": "8.5.6",
+    "tailwindcss": "4.1.11",
     "typescript": "5.8.3"
   },
   "packageManager": "pnpm@10.12.4+sha512.5ea8b0deed94ed68691c9bad4c955492705c5eeb8a87ef86bc62c74a26b037b08ff9570f108b2e4dbd1dd1a9186fea925e527f141c648e85af45631074680184",

@@ -548,6 +548,12 @@ export const Favorites: FC = () => {
           <br />
           なんかこう、余韻を残す感じがいい
         </li>
+
+        <li>
+          <strong>ドトール、のち、はれやか。</strong>
+          <br />
+          ドトールコーヒーのブランドスローガン（2016〜2024）
+        </li>
       </ul>
 
       <h3 id="commercial">コマーシャル</h3>
@@ -632,6 +638,18 @@ export const Favorites: FC = () => {
       <h3 id="quote">ことば・理念</h3>
       <ul>
         <li>
+          <strong>みんななかよく</strong>
+          <br />
+          <a
+            href="https://corporate.sanrio.co.jp/corporate/spirit/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            サンリオの企業理念
+          </a>
+        </li>
+
+        <li>
           <strong>In a world where you can be anything, be kind.</strong>
           <br />
           何にでもなれるこの世界で、やさしくあれ
@@ -707,6 +725,58 @@ export const Favorites: FC = () => {
           最後の段落だけしか読んだことないのですが、ものすごい文章です。ぜひ読んでみてください!!
           <br />
           何を食べたらこんなにすごい文章を書くことができるんだろうと思います
+        </li>
+
+        <li>
+          <strong>安全に懸念を感じた時は迷わず立ち止まります。</strong>
+          <br />
+          <a
+            href="https://www.jal.com/ja/safety/charter/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            JALグループ安全憲章
+          </a>
+        </li>
+
+        <li>
+          <strong>
+            イオンは平和に反することは決して行いません。また、そうした行為や活動には与しません。イオンが目指すのは積極的な平和への貢献です。
+          </strong>
+          <br />
+          <a
+            href="https://www.aeon.info/company/concept/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            イオンの基本理念
+          </a>
+        </li>
+
+        <li>
+          <strong>安全の確保は、輸送の生命である。</strong>
+          <br />
+          <a
+            href="https://laws.e-gov.go.jp/law/326M50000800055/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            運転の安全の確保に関する省令
+          </a>
+        </li>
+
+        <li>
+          <strong>
+            自分に対しては、損と得とあらば損の道をゆくこと。他人に対しては、喜びのタネまきをすること。
+          </strong>
+          <br />
+          <a
+            href="https://www.duskin.co.jp/company/philosophy/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            ダスキン経営理念
+          </a>
         </li>
       </ul>
 

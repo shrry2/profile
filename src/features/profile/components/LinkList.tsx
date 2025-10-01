@@ -43,19 +43,19 @@ const linkItems: LinkItem[] = [
 export const LinkList: FC = () => {
   return (
     <section className="not-prose">
-      <h2 className="text-xl font-semibold mb-6 text-center text-blue-800">
+      <h2 className="text-xl font-medium mb-6 text-center text-[--color-sumi] tracking-wide border-b border-[--color-washi-border] pb-3">
         Links
       </h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
         {linkItems.map((item) => (
-          <div key={item.href} className="group">
+          <div key={item.href}>
             <a
               href={item.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="block bg-gray-50 hover:bg-blue-800 border border-gray-200 rounded-lg p-3 text-center transition-all duration-200 transform hover:-translate-y-0.5 hover:shadow-md"
+              className="block bg-transparent hover:bg-[#ebe7dc] border border-[--color-washi-border] p-3 text-center transition-colors duration-200"
             >
-              <span className="text-sm font-semibold text-gray-700 group-hover:text-white transition-colors">
+              <span className="text-sm font-normal text-[--color-sumi]">
                 {item.label}
               </span>
             </a>

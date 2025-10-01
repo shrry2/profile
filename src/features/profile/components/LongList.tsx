@@ -16,11 +16,11 @@ export const LongList: FC = () => {
         <li>でかいふわふわのものを抱きしめたい</li>
         <li>
           まだ鑑賞できていない名作・人気作を一気に鑑賞したい
-          <details className="border border-gray-300 bg-gray-100 rounded-lg overflow-hidden">
-            <summary className="cursor-pointer font-medium bg-gray-50 p-4 hover:bg-gray-200 transition-colors">
+          <details className="border border-[--color-washi-border] bg-[--color-washi] overflow-hidden mt-2">
+            <summary className="cursor-pointer font-medium bg-[#ebe7dc] p-4 hover:bg-[#e0dbd0] transition-colors text-[--color-sumi]">
               たとえば...
             </summary>
-            <div className="p-4">
+            <div className="p-4 bg-[--color-washi]">
               <ul>
                 <li>
                   小説

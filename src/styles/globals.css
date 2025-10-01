@@ -2,3 +2,110 @@
 
 /* biome-ignore lint/suspicious/noUnknownAtRules: Tailwind では必須の書き方 */
 @plugin '@tailwindcss/typography';
+
+/* 和紙と墨をテーマにしたカスタムカラー */
+/* biome-ignore lint/suspicious/noUnknownAtRules: Tailwind CSS 4 のカスタムテーマ定義 */
+@theme {
+  --color-washi: #f5f1e8;
+  --color-sumi: #2d2d2d;
+  --color-sumi-light: #6b6b6b;
+  --color-washi-border: #d4cfc4;
+  --color-accent: #8b7355;
+}
+
+/* 明朝体のタイポグラフィ設定 */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Serif JP", serif;
+  color: var(--color-sumi);
+  background-color: var(--color-washi);
+  line-height: 1.8;
+}
+
+/* Prose スタイルのカスタマイズ */
+.prose {
+  --tw-prose-body: var(--color-sumi);
+  --tw-prose-headings: var(--color-sumi);
+  --tw-prose-links: var(--color-sumi);
+  --tw-prose-bold: var(--color-sumi);
+  --tw-prose-counters: var(--color-sumi-light);
+  --tw-prose-bullets: var(--color-sumi-light);
+  --tw-prose-hr: var(--color-washi-border);
+  --tw-prose-quotes: var(--color-sumi);
+  --tw-prose-quote-borders: var(--color-washi-border);
+  --tw-prose-captions: var(--color-sumi-light);
+  --tw-prose-th-borders: var(--color-washi-border);
+  --tw-prose-td-borders: var(--color-washi-border);
+}
+
+.prose h2 {
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--color-washi-border);
+  padding-bottom: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Radix UI アニメーション */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutToLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.animate-slide-in-from-left {
+  animation: slideInFromLeft 0.3s ease-out;
+}
+
+.animate-slide-out-to-left {
+  animation: slideOutToLeft 0.2s ease-in;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out;
+}
+
+.animate-fade-out {
+  animation: fadeOut 0.15s ease-in;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}

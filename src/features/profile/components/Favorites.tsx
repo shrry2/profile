@@ -74,11 +74,11 @@ export const Favorites: FC = () => {
       <h2>お気に入り</h2>
       <p>※ ここが本編です。おすすめがあったら教えてください</p>
 
-      <ul className="list-none flex flex-col lg:flex-row flex-wrap bg-gray-100 rounded-lg p-4">
+      <ul className="list-none flex flex-col lg:flex-row flex-wrap bg-[--color-accent-light] rounded-xl p-4">
         <li>
           <a
             href="#food-drink"
-            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+            className="block px-4 py-2 text-[--color-accent] hover:bg-[--color-hover] rounded-lg transition-colors"
           >
             食べ物・飲み物
           </a>
@@ -86,7 +86,7 @@ export const Favorites: FC = () => {
         <li>
           <a
             href="#anime-manga"
-            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+            className="block px-4 py-2 text-[--color-accent] hover:bg-[--color-hover] rounded-lg transition-colors"
           >
             アニメ・マンガ
           </a>
@@ -94,7 +94,7 @@ export const Favorites: FC = () => {
         <li>
           <a
             href="#novel"
-            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+            className="block px-4 py-2 text-[--color-accent] hover:bg-[--color-hover] rounded-lg transition-colors"
           >
             小説
           </a>
@@ -102,7 +102,7 @@ export const Favorites: FC = () => {
         <li>
           <a
             href="#music"
-            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+            className="block px-4 py-2 text-[--color-accent] hover:bg-[--color-hover] rounded-lg transition-colors"
           >
             楽曲
           </a>
@@ -110,7 +110,7 @@ export const Favorites: FC = () => {
         <li>
           <a
             href="#movie"
-            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+            className="block px-4 py-2 text-[--color-accent] hover:bg-[--color-hover] rounded-lg transition-colors"
           >
             映画
           </a>
@@ -118,7 +118,7 @@ export const Favorites: FC = () => {
         <li>
           <a
             href="#poem"
-            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+            className="block px-4 py-2 text-[--color-accent] hover:bg-[--color-hover] rounded-lg transition-colors"
           >
             詩・俳句・川柳・短歌・歌詞
           </a>
@@ -126,7 +126,7 @@ export const Favorites: FC = () => {
         <li>
           <a
             href="#naming"
-            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+            className="block px-4 py-2 text-[--color-accent] hover:bg-[--color-hover] rounded-lg transition-colors"
           >
             命名（会社名・ブランド等）
           </a>
@@ -134,7 +134,7 @@ export const Favorites: FC = () => {
         <li>
           <a
             href="#slogan"
-            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+            className="block px-4 py-2 text-[--color-accent] hover:bg-[--color-hover] rounded-lg transition-colors"
           >
             キャッチコピー・スローガン
           </a>
@@ -142,7 +142,7 @@ export const Favorites: FC = () => {
         <li>
           <a
             href="#commercial"
-            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+            className="block px-4 py-2 text-[--color-accent] hover:bg-[--color-hover] rounded-lg transition-colors"
           >
             コマーシャル
           </a>
@@ -150,7 +150,7 @@ export const Favorites: FC = () => {
         <li>
           <a
             href="#quote"
-            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+            className="block px-4 py-2 text-[--color-accent] hover:bg-[--color-hover] rounded-lg transition-colors"
           >
             ことば・理念
           </a>
@@ -158,7 +158,7 @@ export const Favorites: FC = () => {
         <li>
           <a
             href="#youtube"
-            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+            className="block px-4 py-2 text-[--color-accent] hover:bg-[--color-hover] rounded-lg transition-colors"
           >
             YouTube チャンネル
           </a>
@@ -166,7 +166,7 @@ export const Favorites: FC = () => {
         <li>
           <a
             href="#character"
-            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+            className="block px-4 py-2 text-[--color-accent] hover:bg-[--color-hover] rounded-lg transition-colors"
           >
             キャラクター
           </a>
@@ -174,7 +174,7 @@ export const Favorites: FC = () => {
         <li>
           <a
             href="#idea"
-            className="block px-4 py-2 text-blue-600 hover:bg-gray-200 rounded-sm transition-colors"
+            className="block px-4 py-2 text-[--color-accent] hover:bg-[--color-hover] rounded-lg transition-colors"
           >
             アイデア
           </a>
@@ -426,6 +426,12 @@ export const Favorites: FC = () => {
           <strong>ボブ・ディラン「Blowin&apos; in the Wind」</strong>
           <br />
           The answer, my friend, is blowin&apos; in the wind
+        </li>
+
+        <li>
+          <strong>ZARD「マイ フレンド」</strong>
+          <br />
+          「いつも輝いていたね」という回想風の歌詞がめっちゃ刺さります
         </li>
       </ul>
 

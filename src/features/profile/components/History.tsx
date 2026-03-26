@@ -13,11 +13,11 @@ export const History: FC = () => {
         <li>2023年7月: フリーランスエンジニアに戻る</li>
         <li>2025年3月: 友人が起業したスタートアップに参画</li>
       </ul>
-      <details className="border border-[--color-washi-border] bg-[--color-washi] overflow-hidden mt-4">
-        <summary className="cursor-pointer font-medium bg-[#ebe7dc] p-4 hover:bg-[#e0dbd0] transition-colors text-[--color-sumi]">
+      <details className="border border-[--color-washi-border] bg-[--color-washi] overflow-hidden mt-4 rounded-xl">
+        <summary className="cursor-pointer font-medium bg-[--color-hover] p-4 hover:bg-[--color-washi-border] transition-colors text-[--color-sumi] rounded-t-xl">
           昔話 (クリックして開閉)
         </summary>
-        <div className="p-4 bg-[--color-washi]">
+        <div className="p-4 bg-[--color-washi] rounded-b-xl">
           <p>
             なぜ比較的若い私が「個人ホームページ」の時代を知っているのか、なぜWeb開発を仕事にしたのか。すこし語らせてください。
           </p>

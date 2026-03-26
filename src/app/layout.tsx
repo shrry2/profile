@@ -37,13 +37,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           crossOrigin=""
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600&display=swap"
           rel="stylesheet"
         />
       </head>
       <body>
         <div className="min-h-screen flex flex-col">
-          <main className="flex-1 w-full px-6 sm:px-8 py-12">{children}</main>
+          <main className="flex-1 w-full">{children}</main>
           <Footer />
         </div>
       </body>

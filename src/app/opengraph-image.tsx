@@ -24,7 +24,7 @@ export default async function Image() {
     <div
       style={{
         fontSize: 128,
-        background: "white",
+        background: "#faf8f4",
         width: "100%",
         height: "100%",
         display: "flex",

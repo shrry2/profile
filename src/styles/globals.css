@@ -2,22 +2,26 @@
 
 @plugin "@tailwindcss/typography";
 
-/* 和紙と墨をテーマにしたカスタムカラー */
+/* カスタムカラー */
 @theme {
-  --color-washi: #f5f1e8;
-  --color-sumi: #2d2d2d;
-  --color-sumi-light: #6b6b6b;
-  --color-washi-border: #d4cfc4;
-  --color-accent: #8b7355;
+  --color-washi: #faf8f4;
+  --color-sumi: #333333;
+  --color-sumi-light: #757575;
+  --color-washi-border: #e8e4dc;
+  --color-accent: #c4917c;
+  --color-accent-light: #f0ddd5;
+  --color-accent-hover: #b37d68;
+  --color-card: #ffffff;
+  --color-hover: #f5f2ec;
 }
 
-/* 明朝体のタイポグラフィ設定 */
+/* タイポグラフィ設定 */
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Noto Serif JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   color: var(--color-sumi);
   background-color: var(--color-washi);
   line-height: 1.8;
@@ -41,64 +45,65 @@ body {
 
 .prose h2 {
   font-weight: 500;
-  letter-spacing: 0.05em;
-  border-bottom: 1px solid var(--color-washi-border);
+  letter-spacing: 0.06em;
   padding-bottom: 0.5rem;
-  margin-top: 2rem;
+  margin-top: 0;
   margin-bottom: 1rem;
 }
 
-/* Radix UI アニメーション */
-@keyframes slideInFromLeft {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
+/* prose内リンクのスタイル */
+.prose a {
+  text-decoration: underline;
+  text-decoration-color: var(--color-washi-border);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition:
+    text-decoration-color 0.2s ease,
+    color 0.2s ease;
 }
 
-@keyframes slideOutToLeft {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+.prose a:hover {
+  text-decoration-color: var(--color-accent);
+  color: var(--color-accent-hover);
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
+/* スクロールインジケーター */
+@keyframes bounce-gentle {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
   }
-  to {
+  50% {
+    transform: translateY(8px);
     opacity: 1;
   }
 }
 
-@keyframes fadeOut {
-  from {
-    opacity: 1;
+.animate-bounce-gentle {
+  animation: bounce-gentle 2s ease-in-out infinite;
+}
+
+/* アニメーション無効化 */
+@media (prefers-reduced-motion: reduce) {
+  .animate-bounce-gentle {
+    animation: none;
+    opacity: 0.5;
   }
-  to {
-    opacity: 0;
+
+  .prose a {
+    transition: none;
   }
 }
 
-.animate-slide-in-from-left {
-  animation: slideInFromLeft 0.3s ease-out;
+/* スクロールバー非表示 */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.animate-slide-out-to-left {
-  animation: slideOutToLeft 0.2s ease-in;
-}
-
-.animate-fade-in {
-  animation: fadeIn 0.2s ease-out;
-}
-
-.animate-fade-out {
-  animation: fadeOut 0.15s ease-in;
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
 
 @layer base {

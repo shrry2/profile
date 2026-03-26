@@ -7,8 +7,8 @@ const copyrightYear =
 
 export const Footer: FC = () => {
   return (
-    <footer className="bg-[--color-washi] border-t border-[--color-washi-border] mt-16">
-      <div className="max-w-3xl mx-auto px-6 sm:px-8 py-8">
+    <footer className="border-t border-[--color-washi-border]">
+      <div className="max-w-2xl mx-auto px-6 sm:px-8 py-8">
         <p className="text-center text-[--color-sumi-light] text-sm tracking-wide">
           &copy; {copyrightYear} Takaki Takeuchi.
         </p>

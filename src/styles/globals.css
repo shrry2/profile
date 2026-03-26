@@ -1,10 +1,8 @@
 @import "tailwindcss";
 
-/* biome-ignore lint/suspicious/noUnknownAtRules: Tailwind では必須の書き方 */
-@plugin '@tailwindcss/typography';
+@plugin "@tailwindcss/typography";
 
 /* 和紙と墨をテーマにしたカスタムカラー */
-/* biome-ignore lint/suspicious/noUnknownAtRules: Tailwind CSS 4 のカスタムテーマ定義 */
 @theme {
   --color-washi: #f5f1e8;
   --color-sumi: #2d2d2d;

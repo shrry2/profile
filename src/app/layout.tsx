@@ -5,6 +5,7 @@ import "~/styles/globals.css";
 import { Footer } from "~/components/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://takaki.takeu.ch"),
   title: "Takaki Takeuchi - Web Engineer Portfolio",
   description:
     "竹内貴紀（たけうち たかき）のポートフォリオサイト。フリーランスWebエンジニアとしてのスキル、経歴、実績をご紹介します。",

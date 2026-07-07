@@ -228,12 +228,16 @@ DNS を Vercel に戻すだけで即時復旧可能 (Vercel プロジェクト�
 - [x] `opennextjs-cloudflare build` 成功
 - [x] ローカル workerd (`wrangler dev`) で全ルート検証済み
 
-### 残り (ユーザーの Cloudflare アカウント操作が必要) ⬇️
+### 実施済み (続き)
 
-- [ ] `pnpm dlx wrangler login` で Cloudflare 認証
-- [ ] `pnpm deploy` → `shrry2-profile.<subdomain>.workers.dev` で本番同等確認
-- [ ] Cloudflare に `takaki.takeu.ch` を追加 / ネームサーバー移管
-      (現状 DNS の所在を確認: Vercel or 外部レジストラ)
-- [ ] Worker の Custom Domain に `takaki.takeu.ch` を設定 → DNS 切替
+- [x] `wrangler login` (takaki.personal@gmail.com)
+- [x] `pnpm run deploy` → https://shrry2-profile.takaki-takeuchi.workers.dev で本番同等確認
+      (全ルート 200 / redirect / og:image 絶対URL 確認済み)
+- [x] `takeu.ch` は既に Cloudflare ゾーン (ネームサーバー移管は不要)
+
+### 残り ⬇️
+
+- [ ] **カットオーバー**: Worker の Custom Domain に `takaki.takeu.ch` を設定
+      → 現状の Vercel 向き DNS を Cloudflare Worker に切替 (本番切替、可逆)
 - [ ] CI/CD (Cloudflare Workers Builds もしくは GitHub Actions + wrangler-action) 構築
 - [ ] 数日安定を確認後に Vercel プロジェクト削除 (それまではロールバック用に温存)

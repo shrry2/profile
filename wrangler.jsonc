@@ -11,10 +11,17 @@
     // https://developers.cloudflare.com/workers/configuration/compatibility-flags/#global-fetch-strictly-public
     "global_fetch_strictly_public"
   ],
+  "workers_dev": true,
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS"
   },
+  // カットオーバー用: 既存の Vercel CNAME (takaki.takeu.ch) を Cloudflare ダッシュボードで
+  // 削除した後に、以下のコメントを外して `pnpm run deploy` すると本番切替が完了する。
+  // (現状 OAuth スコープに dns:write が無く、既存レコードとの 409 を自動解決できないため保留)
+  // "routes": [
+  //   { "pattern": "takaki.takeu.ch", "custom_domain": true }
+  // ],
   "services": [
     {
       "binding": "WORKER_SELF_REFERENCE",

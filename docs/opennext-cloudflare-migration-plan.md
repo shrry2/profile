@@ -68,18 +68,18 @@ Cloudflare Workers
 
 ---
 
-## 4. `/opengraph-image` (edge runtime) の扱い ⚠️
+## 4. `/opengraph-image` (edge runtime) の扱い ✅ 対応済み
 
-現状 `src/app/opengraph-image.tsx` は `export const runtime = "edge"` を宣言し、
-`next/og` の `ImageResponse` と `fetch(new URL("./Inter-SemiBold.ttf", import.meta.url))`
-でフォントを読み込んでいる。
+当初の動的 `next/og` ルート (`opengraph-image.tsx`, `runtime = "edge"`) は
+**廃止し、静的画像に置換済み**。
 
-- OpenNext Cloudflare では**全ルートが workerd 上で動く**ため、`edge` 宣言は原則不要。
-- **対応方針**: `export const runtime = "edge"` を**削除**し、デフォルトランタイムで動かす。
-  `next/og` は OpenNext Cloudflare でサポートされているが、フォントの
-  `fetch(import.meta.url)` 読み込みが workerd で解決されるかを **preview で必ず実機確認**する。
-- リスク: フォント fetch が失敗する場合、フォントを Base64 で埋め込む /
-  静的アセット URL から取得する等に切り替える。→ §5 のステップ5で検証。
+- gpt-image-2 で和モダン・ミニマルの OG カードを 1 枚生成 → 1200×630 に加工し
+  `src/app/opengraph-image.png` として配置(Next.js の静的 opengraph-image 規約)。
+- 未使用になった `Inter-SemiBold.ttf` は削除。
+- `layout.tsx` に `metadataBase` を設定し、`og:image` が絶対 URL
+  (`https://takaki.takeu.ch/opengraph-image.png`) に解決されることを確認。
+- **結果: 動的ルートがゼロになり、サイトは完全静的化**。workerd 上でのフォント
+  fetch 問題も原理的に消滅した。
 
 ---
 
@@ -216,14 +216,24 @@ DNS を Vercel に戻すだけで即時復旧可能 (Vercel プロジェクト�
 
 ## 10. チェックリスト (サマリ)
 
-- [ ] `@opennextjs/cloudflare` の Next.js 16 対応を確認
-- [ ] `wrangler login` / Cloudflare アカウント準備
-- [ ] `migrate` 実行 → `wrangler.jsonc` / `open-next.config.ts` 生成
-- [ ] `package.json` scripts / `biome.json` 除外 / `.gitignore` 整備
-- [ ] `opengraph-image.tsx` の `runtime=edge` 削除・OG 画像実機検証
-- [ ] `metadataBase` 設定
-- [ ] `pnpm preview` でローカル workerd 検証
-- [ ] `pnpm deploy` → `*.workers.dev` で本番同等確認
-- [ ] Cloudflare Custom Domain 設定 / DNS 切替
-- [ ] CI/CD (Workers Builds or GitHub Actions) 構築
-- [ ] 数日安定後に Vercel プロジェクト削除
+### 実施済み (このブランチ `chore/deps-update-and-opennext-plan`)
+
+- [x] 依存を最新へ更新 (next 16.2.10 / react 19.2.7 ほか)
+- [x] `@opennextjs/cloudflare` の Next.js 16 対応を確認 (1.20.1 が `>=16.2.6` 対応)
+- [x] OG 画像を静的化 (gpt-image-2 生成 → `opengraph-image.png`)、動的ルート撤廃
+- [x] `metadataBase` 設定
+- [x] `@opennextjs/cloudflare` + `wrangler` インストール
+- [x] `wrangler.jsonc` / `open-next.config.ts` 作成 (最小構成)
+- [x] `package.json` scripts / `biome.json` 除外 / `.gitignore` 整備
+- [x] `opennextjs-cloudflare build` 成功
+- [x] ローカル workerd (`wrangler dev`) で全ルート検証済み
+
+### 残り (ユーザーの Cloudflare アカウント操作が必要) ⬇️
+
+- [ ] `pnpm dlx wrangler login` で Cloudflare 認証
+- [ ] `pnpm deploy` → `shrry2-profile.<subdomain>.workers.dev` で本番同等確認
+- [ ] Cloudflare に `takaki.takeu.ch` を追加 / ネームサーバー移管
+      (現状 DNS の所在を確認: Vercel or 外部レジストラ)
+- [ ] Worker の Custom Domain に `takaki.takeu.ch` を設定 → DNS 切替
+- [ ] CI/CD (Cloudflare Workers Builds もしくは GitHub Actions + wrangler-action) 構築
+- [ ] 数日安定を確認後に Vercel プロジェクト削除 (それまではロールバック用に温存)

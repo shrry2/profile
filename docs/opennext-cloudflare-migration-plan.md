@@ -241,8 +241,13 @@ DNS を Vercel に戻すだけで即時復旧可能 (Vercel プロジェクト�
       `pnpm run deploy`。`takaki.takeu.ch` が Worker で稼働、SSL・全ルート本番検証済み
       (server: cloudflare / ssl_verify OK)
 
+### 実施済み (続き)
+
+- [x] CI/CD: GitHub Actions `.github/workflows/deploy.yml` を追加
+      (main push / 手動実行で `pnpm run deploy`)。`CLOUDFLARE_ACCOUNT_ID` secret 設定済み
+
 ### 残り ⬇️
 
-- [ ] CI/CD (Cloudflare Workers Builds もしくは GitHub Actions + wrangler-action) 構築
+- [ ] Cloudflare API Token を発行し `CLOUDFLARE_API_TOKEN` secret を登録 (ユーザー操作)
+- [ ] 本番 PR をマージ (`chore/deps-update-and-opennext-plan` → `main`) → 初回自動デプロイ確認
 - [ ] 数日安定を確認後に Vercel プロジェクト削除 (それまではロールバック用に温存)
-- [ ] (任意) 本番 PR をマージ (`chore/deps-update-and-opennext-plan` → `main`)

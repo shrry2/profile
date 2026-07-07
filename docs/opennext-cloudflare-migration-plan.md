@@ -235,9 +235,14 @@ DNS を Vercel に戻すだけで即時復旧可能 (Vercel プロジェクト�
       (全ルート 200 / redirect / og:image 絶対URL 確認済み)
 - [x] `takeu.ch` は既に Cloudflare ゾーン (ネームサーバー移管は不要)
 
+### 実施済み (続き)
+
+- [x] **カットオーバー完了**: Vercel CNAME 削除 → `custom_domain` route 有効化 →
+      `pnpm run deploy`。`takaki.takeu.ch` が Worker で稼働、SSL・全ルート本番検証済み
+      (server: cloudflare / ssl_verify OK)
+
 ### 残り ⬇️
 
-- [ ] **カットオーバー**: Worker の Custom Domain に `takaki.takeu.ch` を設定
-      → 現状の Vercel 向き DNS を Cloudflare Worker に切替 (本番切替、可逆)
 - [ ] CI/CD (Cloudflare Workers Builds もしくは GitHub Actions + wrangler-action) 構築
 - [ ] 数日安定を確認後に Vercel プロジェクト削除 (それまではロールバック用に温存)
+- [ ] (任意) 本番 PR をマージ (`chore/deps-update-and-opennext-plan` → `main`)

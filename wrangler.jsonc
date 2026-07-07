@@ -1,0 +1,30 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "main": ".open-next/worker.js",
+  "name": "shrry2-profile",
+  "compatibility_date": "2024-12-30",
+  "compatibility_flags": [
+    // Node.js API を有効化
+    // https://developers.cloudflare.com/workers/configuration/compatibility-flags/#nodejs-compatibility-flag
+    "nodejs_compat",
+    // アプリ内の fetch を許可
+    // https://developers.cloudflare.com/workers/configuration/compatibility-flags/#global-fetch-strictly-public
+    "global_fetch_strictly_public"
+  ],
+  // preview URL をフォールバックとして維持
+  "workers_dev": true,
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  // 本番ドメイン。Cloudflare が DNS レコード (proxied) と SSL 証明書を自動管理する。
+  "routes": [{ "pattern": "takaki.takeu.ch", "custom_domain": true }],
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "shrry2-profile"
+    }
+  ]
+  // このサイトは ISR / On-demand Revalidation / DB を使わないため、
+  // R2 (NEXT_INC_CACHE_R2_BUCKET) や Durable Objects, Images binding は不要。
+}

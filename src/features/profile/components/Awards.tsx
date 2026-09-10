@@ -26,6 +26,7 @@ export const Awards: FC = () => {
             <li>登録番号: 第031496号</li>
           </ul>
         </li>
+        <li>第二種電気工事士 (2026年9月)</li>
       </ul>
     </section>
   );

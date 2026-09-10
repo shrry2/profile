@@ -30,6 +30,10 @@ const foods = [
     description: "サクサク食感からの味の濃い中身。至高",
   },
   {
+    name: "オムライス",
+    description: "オーソドックスな薄焼き卵とケチャップたっぷりのものが好きです",
+  },
+  {
     name: "ザッハトルテ",
     description: "チョコレートケーキの王様",
   },
@@ -68,6 +72,17 @@ const foods = [
   },
 ];
 
+const flowers = [
+  {
+    name: "リナリア",
+    description: "儚げでかわいいうえに、群生しているのが壮観です",
+  },
+  {
+    name: "ヒイラギ",
+    description: "花がすごくいい香りがします",
+  },
+];
+
 export const Favorites: FC = () => {
   return (
     <section className="flex flex-col gap-4">
@@ -81,6 +96,14 @@ export const Favorites: FC = () => {
             className="block px-4 py-2 text-[--color-accent] hover:bg-[--color-hover] rounded-lg transition-colors"
           >
             食べ物・飲み物
+          </a>
+        </li>
+        <li>
+          <a
+            href="#flower"
+            className="block px-4 py-2 text-[--color-accent] hover:bg-[--color-hover] rounded-lg transition-colors"
+          >
+            花
           </a>
         </li>
         <li>
@@ -188,6 +211,17 @@ export const Favorites: FC = () => {
             <strong>{food.name}</strong>
             <br />
             {food.description}
+          </li>
+        ))}
+      </ul>
+
+      <h3 id="flower">花</h3>
+      <ul>
+        {flowers.map((flower) => (
+          <li key={flower.name}>
+            <strong>{flower.name}</strong>
+            <br />
+            {flower.description}
           </li>
         ))}
       </ul>

@@ -53,6 +53,11 @@ export const navigationItems: NavItem[] = [
     showInPill: true,
   },
   {
+    id: "nostalgic",
+    label: "ノスタルジック",
+    showInPill: false,
+  },
+  {
     id: "memorable-events",
     label: "印象的な出来事",
     showInPill: false,

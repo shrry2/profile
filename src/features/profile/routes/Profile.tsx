@@ -7,6 +7,7 @@ import { Favorites } from "~/features/profile/components/Favorites";
 import { History } from "~/features/profile/components/History";
 import { LongList } from "~/features/profile/components/LongList";
 import { MemorableEvents } from "~/features/profile/components/MemorableEvents";
+import { Nostalgic } from "~/features/profile/components/Nostalgic";
 import { Skills } from "~/features/profile/components/Skills";
 import { FloatingNav } from "../components/FloatingNav";
 import { HeroSection } from "../components/HeroSection";
@@ -71,6 +72,13 @@ export const Profile: FC = () => {
             className="py-16 lg:py-24 border-t border-[--color-washi-border] scroll-mt-24"
           >
             <Favorites />
+          </section>
+
+          <section
+            id="nostalgic"
+            className="py-16 lg:py-24 border-t border-[--color-washi-border] scroll-mt-24"
+          >
+            <Nostalgic />
           </section>
 
           <section

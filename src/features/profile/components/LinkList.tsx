@@ -19,6 +19,10 @@ const linkItems: LinkItem[] = [
     label: "Twitter",
   },
   {
+    href: "https://www.instagram.com/shrry22/",
+    label: "Instagram",
+  },
+  {
     href: "https://www.facebook.com/takaki.tekeuchi/",
     label: "Facebook",
   },
